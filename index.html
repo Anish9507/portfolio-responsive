@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO-friendly Meta Tags -->
+  <meta name="description" content="Welcome to Anish's personal portfolio website. Discover projects, skills, and contact information.">
+  <meta name="keywords" content="Anish, portfolio, HTML5 semantic structure, web accessibility, personal website">
+  <meta name="author" content="Anish">
+  <title>Home | Anish's Personal Portfolio</title>
+  <!-- Basic Stylesheet Link -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Theme Management Script -->
+  <script>
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header with Global Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo" aria-label="Anish's Portfolio Home">Anish's Portfolio</a>
+      <nav aria-label="Global Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" tabindex="-1">
+    
+    <!-- Introduction Section -->
+    <section aria-labelledby="welcome-heading">
+      <h1 id="welcome-heading">Welcome to My Portfolio</h1>
+      <p class="lead">
+        Hello! I'm Anish, a passionate developer learning to build clean, compliant, and accessible web experiences. This website is built using strictly semantic HTML5 markup and basic CSS styles, with a focus on web accessibility standards.
+      </p>
+      <p>
+        Feel free to browse around to learn more about my background, check out the key projects I've worked on, or send me a message through the contact form.
+      </p>
+    </section>
+
+    <!-- Highlight Section -->
+    <section aria-labelledby="focus-heading">
+      <h2 id="focus-heading">Core Focus Areas</h2>
+      <div class="focus-grid">
+        <article class="focus-card">
+          <h3>HTML5 Semantic Layouts</h3>
+          <p>
+            Structuring web pages using tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;article&gt;</code> ensures search engines and screen readers can understand the document hierarchy perfectly.
+          </p>
+        </article>
+        <article class="focus-card">
+          <h3>Web Accessibility (A11y)</h3>
+          <p>
+            Ensuring that interactive components are navigable by keyboard-only users, form fields are clearly labeled, and text color contrast meets standard WCAG standards.
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Anish. All rights reserved. Created for Internship Task 1.</p>
+      <div class="footer-socials" aria-label="Social Profiles">
+        <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer">
+          GitHub <span class="sr-only">(opens in a new tab)</span>
+        </a>
+        <a href="https://www.linkedin.com/in/anish-jadhav-118a7a367/" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

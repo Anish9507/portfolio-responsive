@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO-friendly Meta Tags -->
+  <meta name="description" content="Learn more about Anish's background, education, software developer skills, and goals.">
+  <meta name="keywords" content="Anish biography, frontend developer skills, web developer skills, software developer background">
+  <meta name="author" content="Anish">
+  <title>About | Anish's Personal Portfolio</title>
+  <!-- Basic Stylesheet Link -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Theme Management Script -->
+  <script>
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header with Global Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo" aria-label="Anish's Portfolio Home">Anish's Portfolio</a>
+      <nav aria-label="Global Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" tabindex="-1">
+    
+    <div class="about-grid">
+      <!-- Left column: profile sidebar -->
+      <aside class="about-sidebar">
+        <!-- Profile Image with Descriptive Alt Text -->
+        <img src="profile.svg" alt="Avatar illustration representing developer Anish" class="profile-img">
+        <h2 style="border: none; margin-bottom: 5px; font-size: 1.5rem; text-align: inherit;">Anish</h2>
+        <p style="font-size: 1rem; color: var(--primary); font-weight: 600; text-align: inherit; margin-bottom: 0;">Frontend Developer</p>
+      </aside>
+
+      <!-- Right column: biography and skills -->
+      <div class="about-content">
+        <!-- Biography Section -->
+        <section aria-labelledby="bio-heading" style="margin-bottom: 40px;">
+          <h1 id="bio-heading">About Me</h1>
+          <p class="lead">
+            Hi! I'm a developer focusing on clean, well-structured code. During my studies, I discovered the importance of semantic HTML structures and accessibility (a11y) standards. I believe that digital assets should be readable and navigable by all users, including those who rely on screen readers or operate exclusively via keyboard input.
+          </p>
+          <p>
+            I have experience writing standards-compliant HTML, semantic CSS layouts, and basic scripts. I am currently expanding my skills as part of my internship tasks.
+          </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills & Technologies</h2>
+          <ul class="skills-grid">
+            <li class="skill-card">HTML5 semantic layout structuring</li>
+            <li class="skill-card">Accessible styling practices</li>
+            <li class="skill-card">WAI-ARIA specifications & roles</li>
+            <li class="skill-card">SEO best practices</li>
+            <li class="skill-card">Version control (Git &amp; GitHub)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Anish. All rights reserved. Created for Internship Task 1.</p>
+      <div class="footer-socials" aria-label="Social Profiles">
+        <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer">
+          GitHub <span class="sr-only">(opens in a new tab)</span>
+        </a>
+        <a href="https://linkedin.com/in/anish-jadhav" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

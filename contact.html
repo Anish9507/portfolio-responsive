@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO-friendly Meta Tags -->
+  <meta name="description" content="Send a message to Anish. Get in touch for software projects, consulting, or general developer questions.">
+  <meta name="keywords" content="contact Anish, email form, personal portfolio contact, web developer inquiries">
+  <meta name="author" content="Anish">
+  <title>Contact | Anish's Personal Portfolio</title>
+  <!-- Basic Stylesheet Link -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Theme Management Script -->
+  <script>
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header with Global Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo" aria-label="Anish's Portfolio Home">Anish's Portfolio</a>
+      <nav aria-label="Global Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" tabindex="-1">
+    
+    <section aria-labelledby="contact-heading" style="margin-bottom: 0;">
+      <div class="contact-grid">
+        <!-- Left Column: Contact info and details -->
+        <div class="contact-info">
+          <h1 id="contact-heading">Contact Me</h1>
+          <p class="lead">
+            If you have any questions or just want to connect, please fill out the form or reach out through my professional channels.
+          </p>
+          <ul class="contact-info-list">
+            <li class="contact-info-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-detail-text">
+                <h3>Email Address</h3>
+                <p><a href="mailto:anish@gmail.com">anish@gmail.com</a></p>
+              </div>
+            </li>
+            <li class="contact-info-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-detail-text">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer">github.com/Anish9507</a></p>
+              </div>
+            </li>
+            <li class="contact-info-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-detail-text">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/anish-jadhav-118a7a367/" target="_blank" rel="noopener noreferrer">linkedin.com/in/anish-jadhav</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Interactive form container -->
+        <div class="form-container">
+          <form action="#" method="POST" aria-label="Contact Form">
+            
+            <p style="font-weight: 600; margin-bottom: 20px; color: var(--text-main);">Send a Message</p>
+
+            <!-- Full Name Group -->
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input 
+                type="text" 
+                id="full-name" 
+                name="name" 
+                required 
+                aria-required="true"
+                autocomplete="name"
+              >
+            </div>
+
+            <!-- Email Group -->
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                aria-required="true"
+                autocomplete="email"
+              >
+            </div>
+
+            <!-- Subject Group -->
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                required 
+                aria-required="true"
+              >
+            </div>
+
+            <!-- Message Group -->
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="6" 
+                required 
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Send Message</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Anish. All rights reserved. Created for Internship Task 1.</p>
+      <div class="footer-socials" aria-label="Social Profiles">
+        <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer">
+          GitHub <span class="sr-only">(opens in a new tab)</span>
+        </a>
+        <a href="https://linkedin.com/in/anish-jadhav" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

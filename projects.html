@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO-friendly Meta Tags -->
+  <meta name="description" content="Browse through Anish's frontend development portfolio. View projects, source code, and live demonstrations.">
+  <meta name="keywords" content="frontend projects, HTML portfolio, developer showcase, web design examples">
+  <meta name="author" content="Anish">
+  <title>Projects | Anish's Personal Portfolio</title>
+  <!-- Basic Stylesheet Link -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Theme Management Script -->
+  <script>
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header with Global Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo" aria-label="Anish's Portfolio Home">Anish's Portfolio</a>
+      <nav aria-label="Global Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" tabindex="-1">
+    
+    <section aria-labelledby="projects-heading">
+      <h1 id="projects-heading">My Projects</h1>
+      <p class="lead">
+        Here are three sample projects I've built using clean structure and focus on accessibility guidelines.
+      </p>
+
+      <!-- Projects responsive 3-column grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" aria-labelledby="proj1-title">
+          <div class="project-img-wrapper">
+            <img src="project-thumbnail.svg" alt="Wireframe chart representing the layout of the Accessible Portfolio site" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <span class="project-tag">HTML5 / Accessibility</span>
+            <h2 id="proj1-title">Accessible Personal Portfolio</h2>
+            <p>
+              This is my first internship project. It is structured to follow semantic standards, ensuring screen reader device readability, logical keyboard tab ordering, and a zero-JS validation framework.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer" aria-label="View source code for Accessible Personal Portfolio on GitHub">
+                View Code <span class="sr-only">(opens in a new tab)</span>
+              </a>
+              <a href="#" aria-label="Launch live site demonstration for Accessible Personal Portfolio">
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" aria-labelledby="proj2-title">
+          <div class="project-img-wrapper">
+            <img src="project-thumbnail.svg" alt="Illustration representing user-profile dashboard pages" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <span class="project-tag">HTML5 / Semantic CSS</span>
+            <h2 id="proj2-title">Task List Dashboard</h2>
+            <p>
+              A mock dashboard setup representing active student workflows. It organizes lists, task detail items, and calendar updates cleanly without relying on visual tables or grid frameworks.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer" aria-label="View source code for Task List Dashboard on GitHub">
+                View Code <span class="sr-only">(opens in a new tab)</span>
+              </a>
+              <a href="#" aria-label="Launch live site demonstration for Task List Dashboard">
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" aria-labelledby="proj3-title">
+          <div class="project-img-wrapper">
+            <img src="project-thumbnail.svg" alt="Drawing depicting a browser page layout containing structured tables and header tags" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <span class="project-tag">A11y / Documentation</span>
+            <h2 id="proj3-title">Web Component Guidelines</h2>
+            <p>
+              A documentation repository listing proper configurations for custom controls. Includes specific guides for sliders, menus, and buttons.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer" aria-label="View source code for Web Component Guidelines on GitHub">
+                View Code <span class="sr-only">(opens in a new tab)</span>
+              </a>
+              <a href="#" aria-label="Launch live site demonstration for Web Component Guidelines">
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Anish. All rights reserved. Created for Internship Task 1.</p>
+      <div class="footer-socials" aria-label="Social Profiles">
+        <a href="https://github.com/Anish9507" target="_blank" rel="noopener noreferrer">
+          GitHub <span class="sr-only">(opens in a new tab)</span>
+        </a>
+        <a href="https://linkedin.com/in/anish-jadhav" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
